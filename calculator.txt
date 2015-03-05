@@ -1,0 +1,140 @@
+namespace calculadora
+{
+	public partial class Form1 : Form {
+
+		float value = 0;
+		string operacao = "";
+		bool operacao_pressed = false;
+		
+		public Form1 () {
+
+			InitializeComponent();
+		}
+
+		private void button_click(object sender, EventArgs e) {
+		
+			if((result.Text == "0") || (operacao_pressed))
+			   result.Clear();
+
+			operacao_pressed = false;
+			Button b = (Button)sender;
+
+			if (b.Text == ","){
+
+				if("result.Text.Countains(",")
+				result.Text += b.Text;					
+			}
+
+			else
+			result.Text += b.Text;
+
+
+		}
+
+
+		private void CE_click(object sender, EventArgs e){
+
+			result.Text = "0";		
+
+		}
+	
+		private void operacao_click(object sender, EventArgs e){
+
+			
+			Button b = (Button)sender;
+
+			if(value !=0){
+			resultado.PerformClick();
+			operacao_pressed = true;
+			operation = b.Text;
+			equacao.Text = value + " " + operacao;
+
+			}
+
+			else{
+			operacao = b.Text;
+			value = string.Parse(result.Text);
+			operacao_pressed = true;
+			equacao.Text = value + " " + operacao;
+			}
+
+		}
+
+		private void resultado_click(object sender, EventArgs e){
+	
+			equacao.Text = " ";
+
+			switch(operacao){
+			
+			case "soma":
+			result.Text = (value + string.Parse(result.Text)).ToString();
+			break;
+
+			case "subtracao":
+			result.Text = (value - string.Parse(result.Text)).ToString();
+			break;
+
+			case "multiplicacao":
+			result.Text = (value * string.Parse(result.Text)).ToString();
+			break;
+			
+			case "divisao":
+			result.Text = (value / string.Parse(result.Text)).ToString();
+			break;
+
+			case "porcentagem":
+			result.Text = (value/100 * string.Parse(result.Text)).ToString();
+			break;
+
+			case "porcentagem":
+			result.Text = (value % string.Parse(result.Text)).ToString();
+			break;
+
+			case "potencia":
+			result.Text = (Math.Pow(value,string.Parse(result.Text))).ToString();
+			break;
+
+			case "raiz":
+			result.Text = Math.Sqrt(value).ToString();
+			break;
+
+			case "seno":
+			result.Text = Math.Sin(value).ToString();
+			break;
+
+			case "cosseno":
+			result.Text = Math.Cos(value).ToString();
+			break;
+
+			case "tangente":
+			result.Text = Math.Tan(value).ToString();
+			break;
+			
+			value = float.Parse(result.Text);
+			operacao = "";
+
+			}
+
+			
+			private void C_click(object sender, EventArgs e){
+			
+			result.Clear();
+			value = "0";		
+
+		}
+			
+
+
+			
+
+
+
+		}
+
+}
+
+}
+
+
+obs: Na caixa onde aparece o resultado o nome do textbox é result
+obs: label é a equecao pequena na tela 
