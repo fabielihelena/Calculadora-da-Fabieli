@@ -55,6 +55,10 @@
             this.button24 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.equacao = new System.Windows.Forms.TextBox();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
+            this.button28 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // result
@@ -64,7 +68,7 @@
             this.result.Location = new System.Drawing.Point(142, 12);
             this.result.Name = "result";
             this.result.ReadOnly = true;
-            this.result.Size = new System.Drawing.Size(131, 29);
+            this.result.Size = new System.Drawing.Size(212, 29);
             this.result.TabIndex = 0;
             this.result.Text = "0";
             this.result.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -278,7 +282,7 @@
             // resultado
             // 
             this.resultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.resultado.Location = new System.Drawing.Point(241, 133);
+            this.resultado.Location = new System.Drawing.Point(322, 133);
             this.resultado.Name = "resultado";
             this.resultado.Size = new System.Drawing.Size(32, 69);
             this.resultado.TabIndex = 20;
@@ -322,21 +326,21 @@
             // 
             this.button24.Location = new System.Drawing.Point(241, 94);
             this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(32, 32);
+            this.button24.Size = new System.Drawing.Size(75, 32);
             this.button24.TabIndex = 24;
-            this.button24.Text = "C";
+            this.button24.Text = "! Recursiva";
             this.button24.UseVisualStyleBackColor = true;
-            this.button24.Click += new System.EventHandler(this.C_click);
+            this.button24.Click += new System.EventHandler(this.operacao_click);
             // 
             // button25
             // 
             this.button25.Location = new System.Drawing.Point(241, 56);
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(32, 32);
+            this.button25.Size = new System.Drawing.Size(75, 31);
             this.button25.TabIndex = 25;
-            this.button25.Text = "CE";
+            this.button25.Text = "! Iterativa";
             this.button25.UseVisualStyleBackColor = true;
-            this.button25.Click += new System.EventHandler(this.CE_click);
+            this.button25.Click += new System.EventHandler(this.operacao_click);
             // 
             // equacao
             // 
@@ -351,11 +355,55 @@
             this.equacao.TabIndex = 26;
             this.equacao.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(322, 56);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(32, 32);
+            this.button20.TabIndex = 27;
+            this.button20.Text = "CE";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.CE_click);
+            // 
+            // button26
+            // 
+            this.button26.Location = new System.Drawing.Point(322, 94);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(32, 31);
+            this.button26.TabIndex = 28;
+            this.button26.Text = "C";
+            this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.C_click);
+            // 
+            // button27
+            // 
+            this.button27.Location = new System.Drawing.Point(241, 170);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(75, 32);
+            this.button27.TabIndex = 29;
+            this.button27.Text = "Fi Recursiva";
+            this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.operacao_click);
+            // 
+            // button28
+            // 
+            this.button28.Location = new System.Drawing.Point(241, 133);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(75, 32);
+            this.button28.TabIndex = 30;
+            this.button28.Text = "Fi Iterativa";
+            this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.operacao_click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(279, 210);
+            this.ClientSize = new System.Drawing.Size(357, 210);
+            this.Controls.Add(this.button28);
+            this.Controls.Add(this.button27);
+            this.Controls.Add(this.button26);
+            this.Controls.Add(this.button20);
             this.Controls.Add(this.equacao);
             this.Controls.Add(this.button25);
             this.Controls.Add(this.button24);
@@ -421,6 +469,11 @@
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.TextBox equacao;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button button28;
     }
 }
+
 

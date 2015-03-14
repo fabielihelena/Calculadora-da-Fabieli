@@ -34,3 +34,12 @@ E:\CalculadoraFabieli\obj\Debug\CalculadoraFabieli.csprojResolveAssemblyReferenc
 E:\CalculadoraFabieli\obj\Debug\CalculadoraFabieli.Form1.resources
 E:\CalculadoraFabieli\obj\Debug\CalculadoraFabieli.Properties.Resources.resources
 E:\CalculadoraFabieli\obj\Debug\CalculadoraFabieli.csproj.GenerateResource.Cache
+C:\Users\fabieli\Desktop\Calculadora-da-Fabieli\bin\Debug\CalculadoraFabieli.exe.config
+C:\Users\fabieli\Desktop\Calculadora-da-Fabieli\obj\Debug\CalculadoraFabieli.exe
+C:\Users\fabieli\Desktop\Calculadora-da-Fabieli\obj\Debug\CalculadoraFabieli.pdb
+C:\Users\fabieli\Desktop\Calculadora-da-Fabieli\bin\Debug\CalculadoraFabieli.exe
+C:\Users\fabieli\Desktop\Calculadora-da-Fabieli\bin\Debug\CalculadoraFabieli.pdb
+C:\Users\fabieli\Desktop\Calculadora-da-Fabieli\obj\Debug\CalculadoraFabieli.csprojResolveAssemblyReference.cache
+C:\Users\fabieli\Desktop\Calculadora-da-Fabieli\obj\Debug\CalculadoraFabieli.Form1.resources
+C:\Users\fabieli\Desktop\Calculadora-da-Fabieli\obj\Debug\CalculadoraFabieli.Properties.Resources.resources
+C:\Users\fabieli\Desktop\Calculadora-da-Fabieli\obj\Debug\CalculadoraFabieli.csproj.GenerateResource.Cache
