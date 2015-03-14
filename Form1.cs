@@ -20,7 +20,6 @@ namespace CalculadoraFabieli
 
         public Form1()
         {
-
             InitializeComponent();
         }
 
@@ -84,7 +83,6 @@ namespace CalculadoraFabieli
 
         private void Contas()
         {
-
 
             value = double.Parse(result.Text);
 
@@ -177,6 +175,7 @@ namespace CalculadoraFabieli
             return result;
         }
 
+
         static double FibonacciRecursiva(double num)
         {
             if (num == 1)
@@ -186,6 +185,7 @@ namespace CalculadoraFabieli
             else
                 return FibonacciRecursiva(num - 1) + FibonacciRecursiva(num - 2);
         }
+
 
         static double FibonacciIterativa(double num)
         {
@@ -213,6 +213,7 @@ namespace CalculadoraFabieli
             else
                 return n * FatorialRecursiva(n - 1);
         }
+
 
         private void CE_click(object sender, EventArgs e)
         {
